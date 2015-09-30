@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse, NoReverseMatch
 from django.db import models
 from django.db.models.base import ModelBase
 from django.forms.forms import DeclarativeFieldsMetaclass
-from django.forms.util import flatatt
+from django.forms.utils import flatatt
 from django.template import loader
 from django.http import Http404
 from django.template.context import RequestContext

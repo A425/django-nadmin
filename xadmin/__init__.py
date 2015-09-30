@@ -15,8 +15,8 @@ def autodiscover():
     """
 
     from django.conf import settings
-    from django.utils.importlib import import_module
-    from django.utils.module_loading import module_has_submodule
+    # from django.utils.importlib import import_module
+    from django.utils.module_loading import module_has_submodule, import_module
 
     setattr(settings, 'CRISPY_TEMPLATE_PACK', 'bootstrap3')
     setattr(settings, 'CRISPY_CLASS_CONVERTERS', {
