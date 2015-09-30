@@ -7,6 +7,8 @@ django-xadmin-1.8 |Build Status| |Build Status2|
 .. |Build Status2| image:: https://drone.io/github.com/sshwsfc/django-xadmin/status.png
    :target: https://drone.io/github.com/sshwsfc/django-xadmin/latest
 
+Source project is - `here`_
+.. _here: https://github.com/sshwsfc/django-xadmin
 Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.
 
 
@@ -76,14 +78,6 @@ Install Requires
 .. _changelog: https://github.com/etianen/django-reversion/blob/master/CHANGELOG.rst
 .. _xlwt: http://www.python-excel.org/
 .. _xlsxwriter: https://github.com/jmcnamara/XlsxWriter
-
-Documentation
--------------
-
--  English (coming soon)
--  `Chinese`_
-
-.. _Chinese: https://xadmin.readthedocs.org/en/latest/index.html
 
 
 Run Demo Locally
