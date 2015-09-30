@@ -63,7 +63,7 @@ Install Xadmin from source, run:
 Install Requires 
 ----------------
 
--  `django`_ >=1.4
+-  `django`_ >=1.7
 
 -  `django-crispy-forms`_ >=1.2.3 (For xadmin crispy forms)
 
