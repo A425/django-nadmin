@@ -64,7 +64,7 @@ class QuickFilterPlugin(BaseAdminPlugin):
             if hasattr(field, 'rel'):
                 model = field.rel.to
                 rel_name = field.rel.get_related_field().name
-            elif isinstance(field, RelatedObject):
+            elif isinstance(field, ForeignObjectRel):
                 model = field.model
                 rel_name = model._meta.pk.name
             else:

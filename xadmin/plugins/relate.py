@@ -95,7 +95,7 @@ class RelateObject(object):
         parts = lookup.split(LOOKUP_SEP)
         field = self.opts.get_field_by_name(parts[0])[0]
 
-        if not hasattr(field, 'rel') and not isinstance(field, RelatedObject):
+        if not hasattr(field, 'rel') and not isinstance(field, ForeignObjectRel):
             raise Exception(u'Relate Lookup field must a related field')
 
         if hasattr(field, 'rel'):
