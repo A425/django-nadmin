@@ -1,4 +1,4 @@
-django-xadmin-1.8 |Build Status| |Build Status2|
+django-xadmin-1.8 |Build Status|
 ============================================
 
 .. |Build Status| image:: https://travis-ci.org/A425/django-xadmin-1.8.png?branch=master
