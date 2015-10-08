@@ -3,9 +3,7 @@ django-xadmin-1.8 |Build Status| |Build Status2|
 
 .. |Build Status| image:: https://travis-ci.org/A425/django-xadmin-1.8.png?branch=master
    :target: https://travis-ci.org/A425/django-xadmin-1.8
-
-.. |Build Status2| image:: https://drone.io/github.com/sshwsfc/django-xadmin/status.png
-   :target: https://drone.io/github.com/sshwsfc/django-xadmin/latest
+   
 
 Source project is here: https://github.com/sshwsfc/django-xadmin
 
