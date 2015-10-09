@@ -29,8 +29,8 @@ except:
 
 class ExportMenuPlugin(BaseAdminPlugin):
 
-    list_export = ('xlsx', 'xls', 'csv', 'xml', 'json')
-    export_names = {'xlsx': 'Excel 2007', 'xls': 'Excel', 'csv': 'CSV',
+    list_export = ('xlsx', 'xls', 'xml', 'json')
+    export_names = {'xlsx': 'Excel 2007', 'xls': 'Excel',
                     'xml': 'XML', 'json': 'JSON'}
 
     def init_request(self, *args, **kwargs):
@@ -51,7 +51,7 @@ class ExportMenuPlugin(BaseAdminPlugin):
 class ExportPlugin(BaseAdminPlugin):
 
     export_mimes = {'xlsx': 'application/vnd.ms-excel',
-                    'xls': 'application/vnd.ms-excel', 'csv': 'text/csv',
+                    'xls': 'application/vnd.ms-excel',
                     'xml': 'application/xhtml+xml', 'json': 'application/json'}
 
     def init_request(self, *args, **kwargs):
@@ -156,26 +156,6 @@ class ExportPlugin(BaseAdminPlugin):
 
         output.seek(0)
         return output.getvalue()
-
-    def _format_csv_text(self, t):
-        if isinstance(t, bool):
-            return _('Yes') if t else _('No')
-        t = t.replace('"', '""').replace(',', '\,')
-        if isinstance(t, basestring):
-            t = '"%s"' % t
-        return t
-
-    def get_csv_export(self, context):
-        datas = self._get_datas(context)
-        stream = []
-
-        if self.request.GET.get('export_csv_header', 'off') != 'on':
-            datas = datas[1:]
-
-        for row in datas:
-            stream.append(','.join(map(self._format_csv_text, row)))
-
-        return '\r\n'.join(stream)
 
     def _to_xml(self, xml, data):
         if isinstance(data, (list, tuple)):
