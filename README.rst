@@ -60,6 +60,7 @@ Install Nadmin from source, run:
 Or Install using PIP:
 
 .. code:: bash
+
     pip install django-nadmin
 
 Install Requires 
