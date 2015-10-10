@@ -12,7 +12,7 @@ setup(
     author='A425',
     author_email='liu1700@gmail.com',
     license=open('LICENSE').read(),
-    download_url='https://github.com/A425/django-xadmin-1.8/archive/master.zip',
+    download_url='https://github.com/A425/django-nadmin/archive/master.zip',
     packages=['xadmin', 'xadmin.plugins', 'xadmin.templatetags', 'xadmin.views'],
     include_package_data=True,
     install_requires=[
