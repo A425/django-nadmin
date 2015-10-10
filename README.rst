@@ -1,11 +1,11 @@
-django-xadmin-1.8 |Build Status|
+django-nadmin |Build Status|
 ============================================
 
-.. |Build Status| image:: https://travis-ci.org/A425/django-xadmin-1.8.png?branch=master
-   :target: https://travis-ci.org/A425/django-xadmin-1.8
+.. |Build Status| image:: https://travis-ci.org/A425/django-nadmin.png?branch=master
+   :target: https://travis-ci.org/A425/django-nadmin
    
 
-Source project is here: https://github.com/sshwsfc/django-xadmin
+Django-xadmin Source project is here: https://github.com/sshwsfc/django-xadmin
 
 
 Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.
@@ -26,19 +26,19 @@ Features
 Screenshots
 -----------
 
-.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/1pic.jpg
+.. figure:: https://raw.github.com/A425/django-nadmin/docs/images/1pic.jpg
    :alt: Export Data
    
-.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/2pic.jpg
+.. figure:: https://raw.github.com/A425/django-nadmin/docs/images/2pic.jpg
    :alt: Actions
 
-.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/3pic.jpg
+.. figure:: https://raw.github.com/A425/django-nadmin/docs/images/3pic.jpg
    :alt: Filter
 
-.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/4pic.jpg
+.. figure:: https://raw.github.com/A425/django-nadmin/docs/images/4pic.jpg
    :alt: Chart
 
-.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/5pic.jpg
+.. figure:: https://raw.github.com/A425/django-nadmin/docs/images/5pic.jpg
    :alt: Edit inline
 
 Get Started
@@ -52,7 +52,7 @@ Install Xadmin from source, run:
 .. code:: bash
 
     clone or download zip file
-    cd django-xadmin
+    cd django-nadmin
     python setup.py clean
     python setup.py build
     python setup.py install
