@@ -1,34 +1,35 @@
 #!/usr/bin/env python
 from setuptools import setup
 
-# version_tuple = __import__('xadmin.version').VERSION
+# version_tuple = __import__('nadmin.version').VERSION
 # version = ".".join([str(v) for v in version_tuple])
 
 setup(
-    name='django-xadmin-1.8',
+    name='django-nadmin',
     version='0.1.0',
-    description='Django xadmin support django 1.8',
+    description='django nadmin support django version 1.8 based on django-xadmin',
     long_description=open('README.rst').read(),
     author='A425',
     author_email='liu170045@gmail.com',
     license=open('LICENSE').read(),
-    url='http://www.xadmin.io',
-    download_url='https://github.com/A425/django-xadmin-1.8/archive/master.zip',
-    packages=['xadmin', 'xadmin.plugins', 'xadmin.templatetags', 'xadmin.views'],
+    download_url='https://github.com/A425/django-nadmin/archive/master.zip',
+    packages=['nadmin', 'nadmin.plugins', 'nadmin.templatetags', 'nadmin.views'],
     include_package_data=True,
     install_requires=[
         'setuptools',
         'django>=1.7',
         'django-crispy-forms>=1.4.0',
+        'django-formtools',
+        'xlsxwriter',
     ],
     extras_require={
-        'Excel': ['xlwt', 'xlsxwriter'],
+        'Excel': ['xlwt'],
         'Reversion': ['django-reversion'],
     },
     zip_safe=False,
-    keywords=['admin', 'django', 'xadmin', 'bootstrap'],
+    keywords=['admin', 'django', 'xadmin', 'nadmin', 'bootstrap'],
     classifiers=[
-        'Development Status :: 1 - Beta',
+        'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',

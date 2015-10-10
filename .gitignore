@@ -1,4 +1,5 @@
 *.py[cod]
+*.orig
 
 # C extensions
 *.so
@@ -37,8 +38,8 @@ nosetests.xml
 .DS_Store
 .c9revisions
 .settings
-xadmin/static/xadmin/components/
-xadmin/static/xadmin/bower_components/
+nadmin/static/nadmin/components/
+nadmin/static/nadmin/bower_components/
 
 .idea
 *~
