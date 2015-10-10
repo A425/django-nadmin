@@ -5,20 +5,20 @@ from setuptools import setup
 # version = ".".join([str(v) for v in version_tuple])
 
 setup(
-    name='django-xadmin',
-    version='0.5.0',
-    description='Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.',
+    name='django-xadmin-1.8',
+    version='0.1.0',
+    description='Django xadmin support django version 1.8',
     long_description=open('README.rst').read(),
-    author='sshwsfc',
-    author_email='sshwsfc@gmail.com',
+    author='A425',
+    author_email='liu1700@gmail.com',
     license=open('LICENSE').read(),
     url='http://www.xadmin.io',
-    download_url='http://github.com/sshwsfc/django-xadmin/archive/master.zip',
+    download_url='https://github.com/A425/django-xadmin-1.8/archive/master.zip',
     packages=['xadmin', 'xadmin.plugins', 'xadmin.templatetags', 'xadmin.views'],
     include_package_data=True,
     install_requires=[
         'setuptools',
-        'django>=1.5',
+        'django>=1.7',
         'django-crispy-forms>=1.4.0',
     ],
     extras_require={
