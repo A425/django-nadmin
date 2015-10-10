@@ -52,7 +52,8 @@ Install Xadmin from source, run:
 .. code:: bash
 
     clone or download zip file
-    cd django-xadmin
+    cd django-xadmin-1.8
+    pip install -r requirements.txt
     python setup.py clean
     python setup.py build
     python setup.py install
@@ -63,20 +64,8 @@ Install Requires
 
 -  `django`_ >=1.7
 
--  `django-crispy-forms`_ >=1.2.3 (For xadmin crispy forms)
-
--  `django-reversion`_ ([OPTION] For object history and reversion feature, please select right version by your django, see `changelog`_ )
-
--  `xlwt`_ ([OPTION] For export xls files)
-
--  `xlsxwriter`_ ([OPTION] For export xlsx files)
-
 .. _django: http://djangoproject.com
-.. _django-crispy-forms: http://django-crispy-forms.rtfd.org
-.. _django-reversion: https://github.com/etianen/django-reversion
 .. _changelog: https://github.com/etianen/django-reversion/blob/master/CHANGELOG.rst
-.. _xlwt: http://www.python-excel.org/
-.. _xlsxwriter: https://github.com/jmcnamara/XlsxWriter
 
 
 Run Demo Locally
