@@ -5,14 +5,13 @@ from setuptools import setup
 # version = ".".join([str(v) for v in version_tuple])
 
 setup(
-    name='django-xadmin-1.8',
-    version='0.1.0',
+    name='django-nadmin',
+    version='0.1.1',
     description='Django xadmin support django version 1.8',
     long_description=open('README.rst').read(),
     author='A425',
     author_email='liu1700@gmail.com',
     license=open('LICENSE').read(),
-    url='http://www.xadmin.io',
     download_url='https://github.com/A425/django-xadmin-1.8/archive/master.zip',
     packages=['xadmin', 'xadmin.plugins', 'xadmin.templatetags', 'xadmin.views'],
     include_package_data=True,
@@ -20,15 +19,17 @@ setup(
         'setuptools',
         'django>=1.7',
         'django-crispy-forms>=1.4.0',
+        'django-formtools',
+        'xlsxwriter',
     ],
     extras_require={
-        'Excel': ['xlwt', 'xlsxwriter'],
+        'Excel': ['xlwt'],
         'Reversion': ['django-reversion'],
     },
     zip_safe=False,
-    keywords=['admin', 'django', 'xadmin', 'bootstrap'],
+    keywords=['admin', 'django', 'xadmin', 'nadmin', 'bootstrap'],
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
         'Framework :: Django',
         'Intended Audience :: Developers',
