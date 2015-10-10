@@ -78,5 +78,5 @@ Run Demo Locally
 Open http://127.0.0.1:8000 in your browser
 
 
-You may need to ``migrate & syncdb`` to create DB and Admin User if you run this demo first time
+You may need to ``migrate & syncdb`` to create DB and Admin User if you run this demo for the first time
 
