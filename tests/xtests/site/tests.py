@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 
 from base import BaseTest
-from xadmin.sites import AdminSite
-from xadmin.views import BaseAdminView, BaseAdminPlugin, ModelAdminView, filter_hook
+from nadmin.sites import AdminSite
+from nadmin.views import BaseAdminView, BaseAdminPlugin, ModelAdminView, filter_hook
 
 from models import ModelA
 

@@ -24,7 +24,7 @@ ALWAYS_INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'xadmin',
+    'nadmin',
     'crispy_forms',
 ]
 
@@ -70,7 +70,7 @@ def setup(verbosity, test_labels):
     # For testing comment-utils, we require the MANAGERS attribute
     # to be set, so that a test email is sent out which we catch
     # in our tests.
-    settings.MANAGERS = ("admin@xadmin.io",)
+    settings.MANAGERS = ("admin@nadmin.io",)
 
     # Load all the ALWAYS_INSTALLED_APPS.
     # (This import statement is intentionally delayed until after we

@@ -5,7 +5,7 @@ django-nadmin |Build Status|
    :target: https://travis-ci.org/A425/django-nadmin
    
 
-Django-xadmin Source project is here: https://github.com/sshwsfc/django-xadmin
+Django-nadmin Source project is here: https://github.com/sshwsfc/django-nadmin
 
 
 Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.
