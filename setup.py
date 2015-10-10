@@ -6,8 +6,8 @@ from setuptools import setup
 
 setup(
     name='django-nadmin',
-    version='0.1.1',
-    description='Django nadmin support django version 1.8',
+    version='0.1.0',
+    description='django nadmin support django version 1.8 based on django-xadmin',
     long_description=open('README.rst').read(),
     author='A425',
     author_email='liu1700@gmail.com',
