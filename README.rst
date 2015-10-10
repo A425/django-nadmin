@@ -26,19 +26,19 @@ Features
 Screenshots
 -----------
 
-.. figure:: https://raw.github.com/sshwsfc/django-xadmin/docs-chinese/docs/images/plugins/action.png
-   :alt: Actions
+.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/plugins/1pic.jpg
+   :alt: Export Data
    
-.. figure:: https://raw.github.com/sshwsfc/django-xadmin/docs-chinese/docs/images/plugins/filter.png
+.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/plugins/2pic.jpg
+   :alt: Actions
+
+.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/plugins/3pic.jpg
    :alt: Filter
 
-.. figure:: https://raw.github.com/sshwsfc/django-xadmin/docs-chinese/docs/images/plugins/chart.png
+.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/plugins/4pic.jpg
    :alt: Chart
 
-.. figure:: https://raw.github.com/sshwsfc/django-xadmin/docs-chinese/docs/images/plugins/export.png
-   :alt: Export Data
-
-.. figure:: https://raw.github.com/sshwsfc/django-xadmin/docs-chinese/docs/images/plugins/editable.png
+.. figure:: https://raw.github.com/A425/django-xadmin-1.8/docs/images/plugins/5pic.jpg
    :alt: Edit inline
 
 Get Started
