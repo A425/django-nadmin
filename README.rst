@@ -47,7 +47,7 @@ Get Started
 Install
 ^^^^^^^
 
-Install Xadmin from source, run:
+Install Nadmin from source, run:
 
 .. code:: bash
 
@@ -57,6 +57,10 @@ Install Xadmin from source, run:
     python setup.py build
     python setup.py install
 
+Or Install using PIP:
+
+.. code:: bash
+    pip install django-nadmin
 
 Install Requires 
 ----------------
