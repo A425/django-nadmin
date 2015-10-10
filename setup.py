@@ -10,7 +10,7 @@ setup(
     description='django nadmin support django version 1.8 based on django-xadmin',
     long_description=open('README.rst').read(),
     author='A425',
-    author_email='liu1700@gmail.com',
+    author_email='liu170045@gmail.com',
     license=open('LICENSE').read(),
     download_url='https://github.com/A425/django-nadmin/archive/master.zip',
     packages=['nadmin', 'nadmin.plugins', 'nadmin.templatetags', 'nadmin.views'],
