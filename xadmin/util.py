@@ -102,7 +102,7 @@ def lookup_needs_distinct(opts, lookup_path):
     field = opts.get_field_by_name(field_name)[0]
     if ((hasattr(field, 'rel') and
          isinstance(field.rel, models.ManyToManyRel)) or
-        (isinstance(field, models.related.RelatedObject) and
+        (isinstance(field, models.fields.related.ForeignObjectRel) and
          not field.field.unique)):
         return True
     return False
@@ -361,7 +361,7 @@ def label_for_field(name, model, model_admin=None, return_attr=False):
     attr = None
     try:
         field = model._meta.get_field_by_name(name)[0]
-        if isinstance(field, RelatedObject):
+        if isinstance(field, ForeignObjectRel):
             label = field.opts.verbose_name
         else:
             label = field.verbose_name
@@ -383,7 +383,7 @@ def label_for_field(name, model, model_admin=None, return_attr=False):
                 parts = name.split("__")
                 rel_name,name = parts[0],"__".join(parts[1:])
                 field = model._meta.get_field_by_name(rel_name)[0]
-                if isinstance(field, RelatedObject):
+                if isinstance(field, ForeignObjectRel):
                     label = field.opts.verbose_name
                 else:
                     label = field.verbose_name
@@ -482,7 +482,7 @@ class NotRelationField(Exception):
 
 
 def get_model_from_relation(field):
-    if isinstance(field, models.related.RelatedObject):
+    if isinstance(field, models.fields.related.ForeignObjectRel):
         return field.model
     elif getattr(field, 'rel'):  # or isinstance?
         return field.rel.to

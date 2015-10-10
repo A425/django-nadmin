@@ -330,7 +330,7 @@ class RevisionListView(BaseReversionView):
         obj_b, detail_b = self.get_version_object(version_b)
 
         for f in (self.opts.fields + self.opts.many_to_many):
-            if isinstance(f, RelatedObject):
+            if isinstance(f, ForeignObjectRel):
                 label = f.opts.verbose_name
             else:
                 label = f.verbose_name

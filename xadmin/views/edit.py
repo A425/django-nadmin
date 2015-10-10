@@ -326,7 +326,8 @@ class ModelFormAdminView(ModelAdminView):
 
     @filter_hook
     def get_error_list(self):
-        errors = forms.util.ErrorList()
+        # errors = forms.util.ErrorList()
+        errors = forms.utils.ErrorList()
         if self.form_obj.is_bound:
             errors.extend(self.form_obj.errors.values())
         return errors

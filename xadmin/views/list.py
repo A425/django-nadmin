@@ -372,7 +372,7 @@ class ListAdminView(ModelAdminView):
         self.title = _('%s List') % force_unicode(self.opts.verbose_name)
 
         model_fields = [(f, f.name in self.list_display, self.get_check_field_url(f))
-                        for f in (self.opts.fields + self.get_model_method_fields()) if f.name not in self.list_exclude]
+                        for f in (self.opts.fields + tuple(self.get_model_method_fields())) if f.name not in self.list_exclude]
 
         new_context = {
             'model_name': force_unicode(self.opts.verbose_name_plural),
