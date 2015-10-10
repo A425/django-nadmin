@@ -7,10 +7,10 @@ from setuptools import setup
 setup(
     name='django-xadmin-1.8',
     version='0.1.0',
-    description='Django xadmin support django version 1.8',
+    description='Django xadmin support django 1.8',
     long_description=open('README.rst').read(),
     author='A425',
-    author_email='liu1700@gmail.com',
+    author_email='liu170045@gmail.com',
     license=open('LICENSE').read(),
     url='http://www.xadmin.io',
     download_url='https://github.com/A425/django-xadmin-1.8/archive/master.zip',
