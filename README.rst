@@ -8,7 +8,7 @@ django-nadmin |Build Status|
 Django-xadmin Source project is here: https://github.com/sshwsfc/django-xadmin
 
 
-Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.
+A better reqplacement of django admin && support django 1.8, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.Based on django-xadmin
 
 
 Features
@@ -18,7 +18,7 @@ Features
 -  Twitter Bootstrap based UI with theme support
 -  Extensible with plugin support
 -  Better filter, date range, number range, etc.
--  Built-in data export with xls, csv, xml and json format
+-  Built-in data export with xlsx, xml and json format
 -  Dashboard page with widget support
 -  In-site bookmarking
 -  Full CRUD methods
@@ -70,7 +70,22 @@ Install Requires
 -  `django`_ >=1.7
 
 .. _django: http://djangoproject.com
-.. _changelog: https://github.com/etianen/django-reversion/blob/master/CHANGELOG.rst
+
+
+Changelogs
+----------
+
+0.1.0
+^^^^^
+- Do some refactoring to compatible with django 1.8
+- Remove the feature of exporting CSV file
+- Update the images & travis CI
+
+
+
+`More`_
+
+.. _More: ./Changelog.md
 
 
 Run Demo Locally

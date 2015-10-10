@@ -135,7 +135,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
 
-    'xadmin',
+    'nadmin',
     'crispy_forms',
     'reversion',
 

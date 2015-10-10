@@ -1,19 +1,19 @@
 #!/usr/bin/env python
 from setuptools import setup
 
-# version_tuple = __import__('xadmin.version').VERSION
+# version_tuple = __import__('nadmin.version').VERSION
 # version = ".".join([str(v) for v in version_tuple])
 
 setup(
     name='django-nadmin',
-    version='0.1.1',
-    description='Django xadmin support django 1.8',
+    version='0.1.0',
+    description='django nadmin support django version 1.8 based on django-xadmin',
     long_description=open('README.rst').read(),
     author='A425',
     author_email='liu170045@gmail.com',
     license=open('LICENSE').read(),
     download_url='https://github.com/A425/django-nadmin/archive/master.zip',
-    packages=['xadmin', 'xadmin.plugins', 'xadmin.templatetags', 'xadmin.views'],
+    packages=['nadmin', 'nadmin.plugins', 'nadmin.templatetags', 'nadmin.views'],
     include_package_data=True,
     install_requires=[
         'setuptools',

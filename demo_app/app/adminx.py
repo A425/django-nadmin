@@ -1,9 +1,9 @@
-import xadmin
-from xadmin import views
+import nadmin
+from nadmin import views
 from models import IDC, Host, MaintainLog, HostGroup, AccessRecord
-from xadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
-from xadmin.plugins.inline import Inline
-from xadmin.plugins.batch import BatchChangeAction
+from nadmin.layout import Main, TabHolder, Tab, Fieldset, Row, Col, AppendedText, Side
+from nadmin.plugins.inline import Inline
+from nadmin.plugins.batch import BatchChangeAction
 
 class MainDashboard(object):
     widgets = [
@@ -18,13 +18,13 @@ class MainDashboard(object):
             {"type": "addform", "model": MaintainLog},
         ]
     ]
-xadmin.site.register(views.website.IndexView, MainDashboard)
+nadmin.site.register(views.website.IndexView, MainDashboard)
 
 
 class BaseSetting(object):
     enable_themes = True
     use_bootswatch = True
-xadmin.site.register(views.BaseAdminView, BaseSetting)
+nadmin.site.register(views.BaseAdminView, BaseSetting)
 
 
 class GlobalSetting(object):
@@ -33,7 +33,7 @@ class GlobalSetting(object):
         Host: 'fa fa-laptop', IDC: 'fa fa-cloud'
     }
     menu_style = 'default'#'accordion'
-xadmin.site.register(views.CommAdminView, GlobalSetting)
+nadmin.site.register(views.CommAdminView, GlobalSetting)
 
 
 class MaintainInline(object):
@@ -75,7 +75,7 @@ class HostAdmin(object):
 
     search_fields = ['name', 'ip', 'description']
     list_filter = ['idc', 'guarantee_date', 'status', 'brand', 'model',
-                   'cpu', 'core_num', 'hard_disk', 'memory', ('service_type',xadmin.filters.MultiSelectFieldListFilter)]
+                   'cpu', 'core_num', 'hard_disk', 'memory', ('service_type',nadmin.filters.MultiSelectFieldListFilter)]
     
     list_quick_filter = ['service_type',{'field':'idc__name','limit':10}]
     list_bookmarks = [{'title': "Need Guarantee", 'query': {'status__exact': 2}, 'order': ('-guarantee_date',), 'cols': ('brand', 'guarantee_date', 'service_type')}]
@@ -195,8 +195,8 @@ class AccessRecordAdmin(object):
         return obj.date.strftime("%B")
         
 
-xadmin.site.register(Host, HostAdmin)
-xadmin.site.register(HostGroup, HostGroupAdmin)
-xadmin.site.register(MaintainLog, MaintainLogAdmin)
-xadmin.site.register(IDC, IDCAdmin)
-xadmin.site.register(AccessRecord, AccessRecordAdmin)
+nadmin.site.register(Host, HostAdmin)
+nadmin.site.register(HostGroup, HostGroupAdmin)
+nadmin.site.register(MaintainLog, MaintainLogAdmin)
+nadmin.site.register(IDC, IDCAdmin)
+nadmin.site.register(AccessRecord, AccessRecordAdmin)
