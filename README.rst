@@ -75,5 +75,8 @@ Run Demo Locally
     cd demo_app
     ./manage.py runserver
 
-Open http://127.0.0.1:8000 in your browser, the admin user password is ``admin``
+Open http://127.0.0.1:8000 in your browser
+
+
+You may need to ``migrate & syncdb`` to create DB and Admin User if you run this demo first time
 
