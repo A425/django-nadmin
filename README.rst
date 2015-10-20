@@ -8,7 +8,7 @@ django-nadmin |Build Status|
 Django-xadmin Source project is here: https://github.com/sshwsfc/django-xadmin
 
 
-A better reqplacement of django admin && support django 1.8, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.Based on django-xadmin
+A better replacement of django admin && support django 1.8, fully extensible with plugin support, pretty UI based on Twitter Bootstrap.Based on django-xadmin
 
 
 Features
